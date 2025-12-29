@@ -15,26 +15,33 @@ The project emphasizes:
 ## Dataset
 The dataset contains time-series sensor readings collected from a residential environment, including:
 
-- Indoor temperature sensors (T1–T6)
+- Indoor temperature sensors (T1â€“T6)
 - Indoor and outdoor humidity
 - Outdoor weather conditions
 - Lighting usage
 - Appliance energy consumption (target variable)
 
 **Target variable:**
-`Appliances` — log-transformed using `log1p` to reduce skew and stabilize variance.
+`Appliances` â€” log-transformed using `log1p` to reduce skew and stabilize variance.
 
 
 ---
 
 ## Project Structure
 project_root/
+
 |-- data/
+
 |   `-- appliances_energy.csv
+
 |-- src/
+
 |   |-- explore.py        # EDA and correlation analysis
+
 |   `-- regression.py    # Feature engineering and modeling
+
 |-- main.py               # Entry point
+
 `-- README.md
 
 ---
@@ -118,4 +125,5 @@ Potential extensions include:
 
 ## How to Run
 ```bash
+
 python main.py
